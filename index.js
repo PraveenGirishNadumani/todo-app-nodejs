@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const restApis = require('./apiRouter');
 const todoController = require('./controller/todo');
 
-const PORT = 3000; //port number for the server
+const PORT = process.env.PORT || 3000; //port number for the server
 
 /**Connection to mongodb data base */
 (async () => {
